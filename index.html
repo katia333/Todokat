@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat Brush:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Madimi One:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite New Zealand Basic:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <title>index</title>
+</head>
+
+<body>
+    <!--<div class="frame" id="frame">
+            <button id="play-btn" class="play-btn"  aria-label="Lecture" data-url="#">
+                <img src="start.svg"class="start-icon">
+            </button>
+        </div>*/-->
+    <div class="todo-header">
+        <h1 class="items-a">Todokat <img src="cat.svg" class="svg-cat" alt="Description"></h1>
+        <h1 class="items-b"><img src="sparkle.svg" class="svg-cat" alt="Description"> Ma liste 
+        <img src="tree.svg" class="svg-cat" alt="Description"></h1>
+        <h3 class="items-c">__Date: </h3>
+        <h3 class="items-d">__Heure: </h3>
+        <svg xmlns="http://www.w3.org/2000/svg" class="sparkle_svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+            width="100%" height="100%" viewBox="0 0 64 64" aria-hidden="true" role="img" 
+            class="iconify iconify--emojione-monotone" preserveAspectRatio="xMidYMid meet">
+            <path d="M22.625 2c0 15.834-8.557 30-20.625 30c12.068 0 20.625 14.167 20.625 
+            30c0-15.833 8.557-30 20.625-30c-12.068 0-20.625-14.166-20.625-30" fill="#5a7224"/>
+            <path d="M47 32c0 7.918-4.277 15-10.313 15C42.723 47 47 54.084 47 62c0-7.916 
+            4.277-15 10.313-15C51.277 47 47 39.918 47 32z" fill="#5a7224"/>
+            <path d="M51.688 2c0 7.917-4.277 15-10.313 15c6.035 0 10.313 7.084 10.313 15c0-7.916
+            4.277-15 10.313-15c-6.036 0-10.313-7.083-10.313-15" fill="#5a7224"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="sparkle_svg2" xmlns:xlink="http://www.w3.org/1999/xlink" 
+            width="100%" height="100%" viewBox="0 0 64 64" aria-hidden="true" role="img" 
+            class="iconify iconify--emojione-monotone" preserveAspectRatio="xMidYMid meet">
+            <path d="M22.625 2c0 15.834-8.557 30-20.625 30c12.068 0 20.625 14.167 20.625 
+            30c0-15.833 8.557-30 20.625-30c-12.068 0-20.625-14.166-20.625-30" fill="#5a7224"/>
+            <path d="M47 32c0 7.918-4.277 15-10.313 15C42.723 47 47 54.084 47 62c0-7.916 
+            4.277-15 10.313-15C51.277 47 47 39.918 47 32z" fill="#5a7224"/>
+            <path d="M51.688 2c0 7.917-4.277 15-10.313 15c6.035 0 10.313 7.084 10.313 15c0-7.916
+            4.277-15 10.313-15c-6.036 0-10.313-7.083-10.313-15" fill="#5a7224"/>
+        </svg>
+    </div>
+    <div class="interface_principale" id="interface_principale">
+        <div class="grille_planification" id="grille_planification" class="items">
+            <div class="days-card lundi"  data-day="Lundi">
+                <h3 class="days"> 
+                <img src="heart.svg" class="svg-heart" alt="Description">
+                Lundi
+                <img src="heart.svg" class="svg-heart" alt="Description"></h3>
+                <ul></ul>
+                <button class="add-tasks">+</button>
+            </div>
+            <div class="days-card mardi" data-day="Mardi" id="mardi">
+                <h3 class="days">
+                <img src="heart.svg" class="svg-heart" alt="Description">
+                Mardi
+                <img src="heart.svg" class="svg-heart" alt="Description"></h3>
+                <ul></ul>
+                <button class="add-tasks">+</button>
+            </div>
+            <div class="days-card mercredi " data-day="Mercredi" id="mercredi">
+                <h3 class="days">
+                <img src="heart.svg" class="svg-heart" alt="Description">
+                Mercredi
+                <img src="heart.svg" class="svg-heart" alt="Description">
+                </h3>
+                <ul></ul>
+                <button class="add-tasks">+</button>
+            </div>
+            <div class="days-card jeudi" data-day="Jeudi" id="jeudi">
+                <h3 class="days">
+                <img src="heart.svg" class="svg-heart" alt="Description">
+                Jeudi
+                <img src="heart.svg" class="svg-heart" alt="Description">
+                </h3>
+                <ul></ul>
+                <button class="add-tasks">+</button>
+            </div>
+            <div class="days-card vendredi" data-day="Vendredi" id="vendredi">
+                <h3 class="days">
+                <img src="heart.svg" class="svg-heart" alt="Description">
+                Vendredi
+                <img src="heart.svg" class="svg-heart" alt="Description">
+                </h3>
+                <ul></ul>
+                <button class="add-tasks">+</button>
+            </div>
+            <div class="days-card samedi" data-day="Samedi" id="samedi">
+                <h3 class="days">
+                <img src="heart.svg" class="svg-heart" alt="Description">   
+                Samedi
+                <img src="heart.svg" class="svg-heart" alt="Description">
+                </h3>
+                <ul></ul>
+                <button class="add-tasks">+</button>
+            </div>
+            <div class="days-card dimanche" data-day="Dimanche" id="dimanche">
+                <h3 class="days">
+                <img src="heart.svg" class="svg-heart" alt="Description">    
+                Dimanche
+                <img src="heart.svg" class="svg-heart" alt="Description">
+                </h3>
+                <ul></ul>
+                <button class="add-tasks">+</button>
+            </div>
+            <div class="extra">
+                <div >
+                    <button class="ia-perso" >    
+                        <h3 class="police-extra"> Demander à kat-ia de m'aider à agencer ma journeé</h3>
+                    </button>
+                </div> 
+                <div > 
+                    <button class="notes">
+                        <h3 class="police-extra"> Vérifier mes notes</h3>
+                    </button>
+                </div>       
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

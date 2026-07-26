@@ -1,0 +1,179 @@
+ :root {
+    --bg-color: #d9a3a3;
+    --btn-bg: #d1b48c;
+    --btn-border: #a67b5b;
+    --icon-color: #8a5a3c;}
+  .start-icon{border-radius: 60%;width: 100%;height: 100%;}
+  * {margin: 0;padding: 0;box-sizing: border-box;}
+ 
+  html, body {width: 100%;height: 100%;}
+ 
+  body {background-image: url('papier-peint-quadrillé.jpeg');
+    background-attachment: fixed;  /* ← Ceci fixe le fond! */
+    background-size: cover;        /* Couvre tout l'écran */
+    background-position: center;   /* Centre l'image */
+  
+  }
+    _______________________________________________________________________________________________________________________________________
+ /*acceuil*/
+  .frame {
+    width: 100%;
+    max-width: 1400px;
+    aspect-ratio: 16 / 9;
+    border: 2px solid var(--frame-border);
+    border-radius: clamp(6px, 1vw, 14px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+ 
+  .play-btn {
+    width: clamp(90px, 16vw, 220px);
+    height: clamp(45px, 8vw, 110px);
+    background-color: var(--btn-bg);
+    border: 3px dashed var(--btn-border);
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    padding: 0;
+  }
+ 
+  .play-btn:hover {
+    transform: scale(1.05);
+  }
+ 
+  .play-btn:active {
+    transform: scale(0.95);
+  }
+ 
+  .play-btn img {
+    width: 35%;
+    height: 35%;
+    object-fit: contain;
+    pointer-events: none; /* évite que l'image capte le clic à la place du bouton */
+  }
+ 
+    #frame.hidden  { opacity: 0; pointer-events: none; }/* ajouté pour cacher la frame */
+    ___________________________________________________________________________________________________________________________________
+    /*interface principale*/
+    #interface_principale.hidden  { opacity: 0; pointer-events: none; }/* ajouté pour cacher et faire réapparaitre l'interface principale */
+
+    .interface_principale {display:grid;
+    background-color:transparent;
+    }
+    .todo-header{display: grid; 
+      grid-template-rows: 25%;
+      margin:10px;
+    }
+    .items-a{ grid-column-start:1;
+    font-family: 'Caveat Brush', sans-serif;
+    color: #8c6e57;-webkit-text-stroke: 1px #2c2a29;
+    grid-column-end:3;
+    padding:10px;
+    }
+    .svg-cat{width: 25px; 
+    }
+    .items-b{ grid-column-start:1 ;
+      padding:10px;
+      font-family: 'Caveat Brush', sans-serif;
+      color: #8c6e57;-webkit-text-stroke: 1px #2c2a29;
+      grid-column-end:3;
+    }
+    .sparkle_svg{ grid-column-start: 6; 
+      width: 25px;
+      grid-column-end:7;
+      align-self: start;
+      grid-row-start: 1;
+      justify-self: end;
+
+    }
+    .items-c{ grid-column-start: 7; 
+      font-family: 'Caveat Brush', sans-serif;
+      color: #8c6e57;-webkit-text-stroke: 0.1px #23231a;
+      grid-column-end:auto; 
+      grid-row-start: 2;
+      grid-row-end:3;
+      background-color: #9fbf9f; 
+      border: 1px solid #5c5241;
+      border-radius: 15px;
+      align-self: start;
+    }
+    .items-d{ grid-column-start: 7; 
+      font-family: 'Caveat Brush', sans-serif;
+      color: #8c6e57;-webkit-text-stroke: 0.1px #23231a;
+      grid-column-end:auto; 
+      grid-row-start: 2;
+      grid-row-end: ; 
+      background-color: #9fbf9f;
+      border: 1px solid #5c5241;
+      border-radius: 15px;
+      align-self: center;
+    }
+    .sparkle_svg2{ grid-column-start: 6; 
+      width: 25px;
+      grid-column-end:7;
+      grid-row-start:2;
+      justify-self: end;
+      align-self:center;
+    
+
+    }
+    .grille_planification{ gap:20px 20px;;
+      width: 100%;
+      display:grid;
+      grid-template-columns: repeat( 3, 1fr);
+      grid-auto-rows:auto;
+    }
+    .days-card{ display:grid;
+      background-color: #7b523375;
+      border: 1.5px solid #2c2a29;
+      border-radius: 25px;
+      grid-template-rows: auto 1fr auto;  /* h3 | contenu | bouton */
+      min-height: 200px;                   /* Hauteur minimale au repos */
+      overflow: auto;   
+      margin: 10px;                   /* Scroll si trop de contenu */
+    }
+    .days{ justify-self: center;
+      font-family:Madimi One;
+      color:#8c6e57;
+      -webkit-text-stroke: 0.5px #2c2a29;
+      
+    }
+    .svg-heart{ height:15px;
+
+    }
+    .add-tasks{ justify-self: center;
+      align-self: start; 
+      border-radius:25%;
+      background-color:#a67b5b;
+      grid-row-start: 2;
+    }
+    .extra{
+      grid-row-start: 3;
+      grid-row-end: ;
+      grid-column-start: 2;
+      grid-column-end:4 ;
+      display: grid;
+    }
+    .ia-perso{
+      border: 1.5px solid #2c2a29;
+      border-radius: 20px;
+      min-height: 90px  ;
+      background-color: #7aa66bf4;
+      border: 1.5px solid #5d5c31;
+    }
+    .notes{
+      border: 1.5px solid #2c2a29;
+      border-radius: 25px;
+      min-height: 90px ;
+      background-color: #7aa66bf4;
+      border: 1.5px solid #5d5c31;
+    }
+    .police-extra{
+      font-family: cursive;
+      color:#33311b;
+    }
